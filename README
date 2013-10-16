@@ -1,1 +1,24 @@
-hello world!!!
+html2PraatMan
+Version 1.0
+Charalampos Karypidis
+ch.karypidis@gmail.com
+http://addictiveknowledge.blogspot.com/
+October 16, 2013
+##############################
+##############################
+Description
+This tool allows for a batch conversion of all .html ?les in a given directory into
+.man pages (documentation ?les for the Praat software). It has been written
+and tested in Python 2.7 under Windows XP. It is available for free at http:
+//addictiveknowledge.blogspot.com/
+##############################
+##############################
+How to use html2PraatMan
+To properly use html2PraatMan, you will need to:
+1. install Python 2.7 (I have not tried using earlier versions);
+2. install the Beautiful Soup module library for Python;
+3. put all your .html ?les in the same directory;
+4. make sure those ?les are syntactically correct or else the html parsing
+might fail;
+5. drop the html2PraatMan.py in that directory and double-click it;
+6. enjoy the result!
