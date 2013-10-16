@@ -1,0 +1,6 @@
+ManPagesTextFile
+"welkom" "miep" 19970820 0
+<intro> "Hallo allemaal!"
+<entry> "Belangrijk..."
+<normal> "Hoogge\e""erd publiek!"
+<normal> "Einde."
