@@ -1,18 +1,35 @@
+# html2PraatMan - Version 1.0 - October 16, 2013
+# Batch html-to-ManPages converter for Praat documentation
+
+# Copyright (C) 2013  Charalampos Karypidis
+# Email: ch.karypidis@gmail.com
+# http://addictiveknowledge.blogspot.com/
+##############################
+##############################
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+############################################
+############################################
 from bs4 import BeautifulSoup
 import string, os
 
-############################################
 ############################################
 def doubleQuotes(s, number=1):
 	""" ............."""
 	return "\""*number + s + "\""*number
 ############################################
-############################################
-############################################
-############################################
 def bold(s):
 	return "##" + s + "#"
-############################################
 ############################################
 def italics(s):
 	# listWords = string.split(s)
@@ -24,18 +41,14 @@ def italics(s):
 	# 	return string.join(listWords)
 	return "%%" + s + "%"
 ############################################
-############################################
 def monospace(s):
 	return "$$" + s + "$"
-############################################
 ############################################
 def subscript(s):
 	return "__" + s + "_"
 ############################################
-############################################
 def superscript(s):
 	return "^^" + s + "^"
-############################################
 ############################################
 def link(s):
 	target = s['href']
@@ -56,7 +69,6 @@ def link(s):
 			return "@@\\SC" + doubleQuotes(target,2) + " " + "|" + linkText + "@"
 	elif extension in audioExtension:
 		return "@@\\FI" + target + " " + "|" + linkText + "@"
-############################################
 ############################################
 allFiles = []
 htmlList = []
