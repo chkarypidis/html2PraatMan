@@ -9,8 +9,7 @@ October 16, 2013
 Description
 This tool allows for a batch conversion of all .html files in a given directory into
 .man pages (documentation files for the Praat software). It has been written
-and tested in Python 2.7 under Windows XP. It is available for free at http:
-//addictiveknowledge.blogspot.com/
+and tested in Python 2.7 under Windows XP. It is available for free at https://github.com/chkarypidis/html2PraatMan
 ##############################
 ##############################
 How to use html2PraatMan
